@@ -41,7 +41,9 @@ function M.CreateNewChangelist(filepath, command)
         new_cl_buffer, "n", "<CR>", "",{
             noremap = true,
             silent = true,
-            callback = generalops.Make_new_cl(new_cl_buffer, new_cl_window, filepath, command)
+            callback = function()
+                generalops.Make_new_cl(new_cl_buffer, new_cl_window, filepath, command)
+        end
         }
     )
 
