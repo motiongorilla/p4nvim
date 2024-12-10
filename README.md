@@ -1,7 +1,7 @@
 # p4nvim - Neovim Perforce Plugin
 This Neovim plugin provides a set of commands to interact with Perforce directly from Neovim.
 
-## Installation
+## 📦 Installation
 
 You can install this plugin using your preferred plugin manager. Here are examples for some popular ones:
 
@@ -22,19 +22,19 @@ Plug 'motiongorilla/p4nvim'
 ```
 use 'motiongorilla/p4nvim'
 ```
-## Prerequisites
+## ⚡️Prerequisites
 
-Neovim 0.5 or higher
+Neovim 0.8 or higher
 
 Perforce client installed and configured
 
 Telescope.nvim (if you want to see checkout files in Telescope)
 
-## Important Note
+## 🗒️ Important Note
 
 The plugin gathers user data on Neovim start using the p4 info command. Ensure that p4 info provides correct results for the plugin to function properly.
 
-## Commands
+## 📌 Commands
 
 The plugin creates the following user commands when Neovim starts:
 
@@ -60,7 +60,7 @@ The plugin creates the following user commands when Neovim starts:
 
 **:P4CLList** - Show the list of changelists.
 
-## Key Mappings
+## ⚙️ Key Mappings
 
 You can set key mappings for these commands in your **init.vim** or **init.lua**. Here are some examples:
 
@@ -97,7 +97,7 @@ vim.api.nvim_set_keymap('n', '<leader>ps', ':P4ShowCheckedOut<CR>', { noremap = 
 vim.api.nvim_set_keymap('n', '<leader>pc', ':P4CLList<CR>', { noremap = true, silent = true })
 ```
 
-## Examples
+## ✨ Example usage
 
 ### Checking Out a File
 
@@ -107,15 +107,15 @@ vim.api.nvim_set_keymap('n', '<leader>pc', ':P4CLList<CR>', { noremap = true, si
 4. Press Enter.
 5. There's an option to create a new CL. You can create a new CL, and the file will be added to that CL.
 
-## Contributing
+## 📤 Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request on GitHub.
 
-## License
+## ⚖️ License
 
 This project is licensed under the MIT License.
 
-## Troubleshooting
+## 🚧 Troubleshooting
 
 If you encounter any issues, please check the following:
 * Ensure p4 info returns correct results.
